@@ -28,25 +28,24 @@ export const Hero = () => {
           {/* Left Side - Content */}
           <div className="text-white animate-fade-in-left">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              I Turn Your Expertise Into{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-pink-300">
-                Automated Newsletter Systems
+              I Build Digital Products &{" "}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-teal-300">
+                Automation Systems That Scale
               </span>
             </h1>
-            
+
             <p className="text-xl sm:text-2xl mb-8 text-white/90 leading-relaxed">
-              AI-powered automation that sends 250,000+ emails weekly for 20+ clients. 
-              From content curation to delivery—fully automated.
+              From AI-powered newsletters to MVPs and e-commerce operations — I turn ideas into profitable digital products. Currently sending 250,000+ emails weekly and managing millions in e-commerce operations.
             </p>
-            
+
             <div className="flex flex-wrap gap-4">
               <Button
                 variant="default"
                 size="lg"
-                onClick={() => scrollToSection("how-it-works")}
+                onClick={() => scrollToSection("case-studies")}
                 className="text-lg px-8 py-6 h-auto bg-white text-primary hover:bg-white/90 shadow-xl"
               >
-                See How It Works
+                See My Work
                 <ArrowRight className="ml-2" />
               </Button>
             </div>
@@ -56,7 +55,7 @@ export const Hero = () => {
           <div className="flex justify-center lg:justify-end animate-fade-in-right">
             <div className="relative">
               {/* Glow Effect */}
-              <div className="absolute -inset-4 bg-gradient-ruby-gold rounded-full blur-2xl opacity-30 animate-glow" />
+              <div className="absolute -inset-4 bg-gradient-navy-teal rounded-full blur-2xl opacity-30 animate-glow" />
               
               {/* Photo Container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white/20 backdrop-blur-sm shadow-2xl">

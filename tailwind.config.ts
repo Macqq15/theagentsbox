@@ -59,7 +59,7 @@ export default {
         },
         "section-alt": "hsl(var(--section-alt))",
         "accent-dark": "hsl(var(--accent-dark))",
-        "accent-ruby": "hsl(var(--accent-ruby))",
+        "accent-teal": "hsl(var(--accent-teal))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -111,9 +111,10 @@ export default {
         "glow": "glow 2s ease-in-out infinite",
       },
       backgroundImage: {
-        "gradient-navy-ruby": "linear-gradient(135deg, hsl(211 63% 16%) 0%, hsl(350 62% 35%) 100%)",
-        "gradient-ruby-gold": "linear-gradient(135deg, hsl(350 62% 35%) 0%, hsl(46 99% 57%) 100%)",
-        "gradient-hero": "linear-gradient(135deg, hsl(211 63% 16%) 0%, hsl(350 62% 35%) 50%, hsl(46 99% 57%) 100%)",
+        "gradient-navy-teal": "linear-gradient(135deg, hsl(220 75% 18%) 0%, hsl(175 75% 40%) 100%)",
+        "gradient-hero": "linear-gradient(135deg, hsl(220 75% 18%) 0%, hsl(220 65% 25%) 50%, hsl(175 75% 40%) 100%)",
+        "gradient-purple-blue": "linear-gradient(135deg, hsl(220 75% 25%) 0%, hsl(210 75% 35%) 100%)",
+        "gradient-teal-purple": "linear-gradient(135deg, hsl(175 75% 40%) 0%, hsl(220 75% 35%) 100%)",
       },
     },
   },

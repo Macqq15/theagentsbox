@@ -13,7 +13,7 @@ export const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-3">Maciek Zawadzki</h3>
             <p className="text-white/70 mb-4">
-              Building AI-powered automation systems that transform expertise into scalable newsletter operations.
+              Building digital products and automation systems for entrepreneurs worldwide.
             </p>
             <p className="text-white/60 text-sm">
               Based in Rzeszów, Poland

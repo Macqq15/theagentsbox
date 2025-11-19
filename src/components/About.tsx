@@ -7,19 +7,22 @@ export const About = () => {
             What I Do
           </h2>
           <p className="text-center text-muted-foreground mb-16 text-lg">
-            Transforming expertise into scalable automation systems
+            Building digital products and automation systems for entrepreneurs
           </p>
-          
+
           <div className="bg-card rounded-2xl p-8 sm:p-12 shadow-lg border border-border">
             <div className="space-y-6 text-lg text-foreground leading-relaxed">
               <p>
-                I help companies transform their expertise into automated newsletter systems. As co-founder of <span className="font-semibold text-primary">LetterOperators</span>, I've built AI-powered workflows that handle everything from content curation to delivery—eliminating hours of manual work while maintaining quality.
+                I'm <span className="font-semibold text-primary">Maciek Zawadzki</span> — an entrepreneur and builder specializing in digital products and automation systems.
               </p>
               <p>
-                My expertise spans n8n automation, API integrations, and content systems that scale. I focus on creating reliable operations that work consistently, allowing businesses to focus on their expertise rather than newsletter logistics.
+                Over the past 10 years, I've helped businesses scale through smart automation and strategic digital products. From generating <span className="font-semibold text-primary">$10M+ in e-commerce revenue</span> through email marketing to co-founding <span className="font-semibold text-primary">LetterOperators</span> (AI-powered newsletter automation), I focus on building systems that work while you sleep.
               </p>
               <p>
-                Based in <span className="font-medium">Rzeszów, Poland</span>, working with clients globally through partnership-driven approach. Every system I build is designed for scale, reliability, and continuous improvement.
+                Today, I work with entrepreneurs and companies to build MVPs, automate operations, and create digital products that solve real problems. Whether it's AI-powered newsletters sending 250,000+ emails weekly, Amazon seller operations, or building sleep apps — I turn ideas into profitable realities.
+              </p>
+              <p>
+                Based in <span className="font-medium">Rzeszów, Poland</span>, working globally with a partnership-driven approach. Every system I build is designed for scale, reliability, and continuous improvement.
               </p>
             </div>
           </div>

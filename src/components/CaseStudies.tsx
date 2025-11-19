@@ -1,5 +1,4 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { AlertCircle, CheckCircle2, TrendingUp } from "lucide-react";
 
 interface CaseStudy {
@@ -8,46 +7,50 @@ interface CaseStudy {
   problem: string;
   solution: string;
   result: string;
-  metrics: string[];
-  technologies: string[];
 }
 
 const caseStudies: CaseStudy[] = [
   {
     title: "LetterOperators",
-    tagline: "Expertise-Driven Newsletter Service",
-    problem: "Companies spend 8-12 hours weekly creating newsletters manually",
-    solution: "Built end-to-end automated system with AI curation and quality control",
-    result: "Reduced production time to 45 minutes. Now sending 250K+ emails weekly",
-    metrics: ["250,000+ emails/week", "20+ clients", "12K PLN MRR", "92% time savings"],
-    technologies: ["n8n workflows", "Claude API", "FireCrawl", "Multi-platform publishing"],
+    tagline: "AI-First Newsletter Platform",
+    problem: "B2B companies and media companies spending 12+ hours weekly on newsletter production",
+    solution: "Built end-to-end AI automation system with content curation, quality control, and multi-platform delivery",
+    result: "Sending 250,000+ emails weekly for 20+ clients. Reduced production time from 12 hours to 45 minutes (92% time savings)",
+  },
+  {
+    title: "Amazon Operations Services",
+    tagline: "E-commerce Excellence & Compliance",
+    problem: "Amazon sellers struggling with complex compliance requirements and operational efficiency across multiple accounts",
+    solution: "Built automated compliance systems and operational workflows to ensure 100% compliance and streamlined multi-account management",
+    result: "Managing multiple Amazon seller accounts with zero compliance issues and optimized operational workflows",
+  },
+  {
+    title: "Sleep App for Operators",
+    tagline: "Health Tech for Entrepreneurs (In Development)",
+    problem: "Entrepreneurs and operators struggling with sleep quality due to stress and irregular schedules",
+    solution: "Building a science-backed sleep improvement app specifically designed for operators and entrepreneurs",
+    result: "Currently in development phase - focusing on evidence-based interventions for better sleep",
+  },
+  {
+    title: "E-commerce Email Marketing",
+    tagline: "Revenue-Driving Email Automation",
+    problem: "E-commerce shops with underperforming email systems leaving money on the table",
+    solution: "Complete email marketing overhaul including automation workflows, campaign strategy, deliverability optimization, and analytics",
+    result: "Generated $10M+ in revenue across multiple e-commerce clients through strategic email marketing",
   },
   {
     title: "TREBIT",
     tagline: "Premium Trends Intelligence",
-    problem: "Manual trend curation taking 15+ hours per week with inconsistent quality",
-    solution: "Automated research and content curation pipeline with AI-powered analysis",
-    result: "$60K revenue generated across two sales windows with engaged community",
-    metrics: ["$60K revenue", "2 sales windows", "Engaged community"],
-    technologies: ["Content curation", "Trend analysis", "Community management"],
+    problem: "Manual trend research and curation taking 15+ hours weekly with inconsistent quality",
+    solution: "Built automated content curation and analysis pipeline to deliver high-quality trend intelligence",
+    result: "$60K revenue generated across two sales windows with highly engaged community",
   },
   {
-    title: "Wearefasttrack",
-    tagline: "E-commerce Operations Excellence",
-    problem: "Amazon sellers struggling with complex compliance and operational workflows",
-    solution: "Built automated compliance checking and workflow optimization systems",
-    result: "Streamlined operations for multiple seller accounts with zero compliance issues",
-    metrics: ["Multiple accounts managed", "100% compliance rate"],
-    technologies: ["Process automation", "Compliance systems", "Amazon Seller Central"],
-  },
-  {
-    title: "Space Tech Newsletter",
-    tagline: "Deep Tech & Space Economy Insights",
-    problem: "Lack of curated, technical content for space economy professionals",
-    solution: "Building automated curation system for deep tech and space industry news",
-    result: "In Development - Creating high-signal newsletter for tech-forward audience",
-    metrics: ["In Development", "High-tech focus"],
-    technologies: ["Research automation", "Tech analysis", "Curation systems"],
+    title: "Creator Growth System",
+    tagline: "LinkedIn Growth Strategy (2-3 Years)",
+    problem: "Creator stuck at 10K followers with inconsistent growth and no clear content strategy",
+    solution: "Developed and executed comprehensive content marketing strategy over 2-3 years focusing on LinkedIn growth",
+    result: "Grew creator from 10K to 50K followers on LinkedIn (5x growth) through consistent content and strategic engagement",
   },
 ];
 
@@ -56,12 +59,12 @@ export const CaseStudies = () => {
     <section id="case-studies" className="py-24 bg-section-alt">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-center text-primary">
-          Featured Projects
+          Projects & Experience
         </h2>
         <p className="text-center text-muted-foreground mb-16 text-lg max-w-3xl mx-auto">
-          Real problems solved with automated systems that deliver measurable results
+          Real problems solved with digital products and automation systems
         </p>
-        
+
         <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
           {caseStudies.map((study, index) => (
             <Card
@@ -108,30 +111,6 @@ export const CaseStudies = () => {
                     <p className="text-foreground/80 text-sm leading-relaxed font-medium">
                       {study.result}
                     </p>
-                  </div>
-                </div>
-
-                {/* Metrics */}
-                <div className="pt-4 border-t border-border">
-                  <h4 className="font-semibold text-primary mb-3 text-sm">KEY METRICS</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {study.metrics.map((metric, i) => (
-                      <Badge key={i} variant="secondary" className="text-sm font-medium">
-                        {metric}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Technologies */}
-                <div>
-                  <h4 className="font-semibold text-primary mb-3 text-sm">TECHNOLOGY STACK</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {study.technologies.map((tech, i) => (
-                      <Badge key={i} variant="outline" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
                   </div>
                 </div>
               </CardContent>

@@ -2,20 +2,24 @@ import { Badge } from "@/components/ui/badge";
 
 const expertiseCategories = [
   {
+    category: "Product Development",
+    skills: ["MVP Development", "Full-stack Development", "Mobile Apps", "SaaS Products", "Rapid Prototyping"],
+  },
+  {
     category: "Automation & Integration",
-    skills: ["n8n workflow automation", "Complex integrations", "REST APIs", "Webhooks", "Multi-platform publishing"],
+    skills: ["n8n workflows", "API integrations", "Workflow optimization", "Multi-platform automation", "Webhooks"],
   },
   {
     category: "AI & Machine Learning",
-    skills: ["Claude API", "GPT integration", "Custom AI implementations", "RAG systems", "Semantic search"],
+    skills: ["Claude API", "GPT integration", "RAG systems", "AI-powered curation", "Semantic search"],
   },
   {
-    category: "Newsletter & Publishing",
-    skills: ["Multiple ESP integrations", "Content automation", "Email delivery systems", "Platform management"],
+    category: "E-commerce & Marketing",
+    skills: ["Email marketing automation", "Amazon operations", "Sales funnels", "Conversion optimization", "Campaign strategy"],
   },
   {
-    category: "Data & Processing",
-    skills: ["FireCrawl", "Web scraping", "NewsAPI", "SERP API", "Pinecone", "Data pipelines"],
+    category: "Data & Analytics",
+    skills: ["Performance tracking", "Web scraping", "Data pipelines", "Deliverability optimization", "NewsAPI & SERP"],
   },
 ];
 
@@ -27,10 +31,10 @@ export const TechnicalExpertise = () => {
           Technical Expertise
         </h2>
         <p className="text-center text-muted-foreground mb-16 text-lg max-w-3xl mx-auto">
-          Deep technical knowledge across automation, AI, and content systems
+          Deep technical knowledge across product development, automation, and growth systems
         </p>
-        
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {expertiseCategories.map((category, index) => (
             <div
               key={index}

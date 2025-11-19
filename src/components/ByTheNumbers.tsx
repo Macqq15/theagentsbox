@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { TrendingUp, Users, DollarSign, CheckCircle } from "lucide-react";
+import { TrendingUp, Users, DollarSign, Calendar } from "lucide-react";
 
 const stats = [
   {
@@ -10,23 +10,23 @@ const stats = [
     bgColor: "bg-purple-100",
   },
   {
-    icon: Users,
-    number: "20+",
-    label: "Active Clients",
-    color: "text-blue-500",
-    bgColor: "bg-blue-100",
-  },
-  {
     icon: DollarSign,
-    number: "$60K",
-    label: "Revenue Generated (TREBIT)",
+    number: "$10M+",
+    label: "Revenue Generated for E-commerce Clients",
     color: "text-green-500",
     bgColor: "bg-green-100",
   },
   {
-    icon: CheckCircle,
-    number: "95%+",
-    label: "Email Delivery Rate",
+    icon: Users,
+    number: "5x Growth",
+    label: "Helped Creators Grow (10K to 50K on LinkedIn)",
+    color: "text-blue-500",
+    bgColor: "bg-blue-100",
+  },
+  {
+    icon: Calendar,
+    number: "10+ Years",
+    label: "Building Digital Products & Automations",
     color: "text-cyan-500",
     bgColor: "bg-cyan-100",
   },
@@ -42,7 +42,7 @@ export const ByTheNumbers = () => {
           By The Numbers
         </h2>
         <p className="text-center text-white/80 mb-16 text-lg max-w-2xl mx-auto">
-          Real results from real automation systems
+          Real results from real projects and partnerships
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">

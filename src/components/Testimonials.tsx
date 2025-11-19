@@ -3,22 +3,22 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Working with Maciek transformed our newsletter operations. What used to take our team 12 hours now takes less than an hour, and the quality has actually improved.",
-    author: "Client Name",
-    company: "Company Name",
+    quote: "Working with Maciek transformed our newsletter operations. What used to take our team 12 hours now takes 45 minutes, and the quality has actually improved. His automation system is a game-changer.",
+    author: "[Client Name]",
+    company: "[B2B Company]",
+    role: "Marketing Director",
+  },
+  {
+    quote: "Maciek's email marketing strategy generated over $2M in revenue for our e-commerce store. His expertise in automation, deliverability, and campaign strategy is world-class.",
+    author: "[Client Name]",
+    company: "[E-commerce Company]",
     role: "CEO",
   },
   {
-    quote: "The automation system Maciek built for us handles 50,000+ emails per week flawlessly. Best investment we've made in our content operations.",
-    author: "Partner Name",
-    company: "LetterOperators",
-    role: "Co-founder",
-  },
-  {
-    quote: "From idea to fully automated system in just 3 weeks. Maciek's technical expertise and understanding of newsletter operations is exceptional.",
-    author: "Client Name",
-    company: "Tech Company",
-    role: "Marketing Director",
+    quote: "From idea to launched MVP in 6 weeks. Maciek's ability to move fast while maintaining quality is impressive. He understands both the technical and business sides perfectly.",
+    author: "[Client Name]",
+    company: "[Startup Name]",
+    role: "Founder",
   },
 ];
 
