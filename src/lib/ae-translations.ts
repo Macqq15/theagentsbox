@@ -95,7 +95,7 @@ export const aeTranslations = {
     },
     credibility: {
       title: "Trusted by Teams At",
-      brands: ["HP", "Akamai", "FastTrack", "JewelryLab", "Monumo", "Cameron Hair"],
+      brands: ["Trebit", "JewelryLab", "Monumo", "Cameron Hair"],
     },
     proof: {
       title: "Growth Engines I've Built. Results That Speak.",
@@ -120,6 +120,14 @@ export const aeTranslations = {
           tag: "Content AI",
         },
       ],
+    },
+    founder: {
+      title: "Who's Behind This",
+      name: "Maciej Marek",
+      role: "Systems Builder",
+      bio: "I started in enterprise operations at HP and Akamai — environments where systems cannot fail. Then I went the opposite direction: startups, e-commerce, creator economy. I co-built and sold a newsletter platform sending 250K+ emails weekly. I built growth automation driving $10M+ in e-commerce revenue. Now I build AI agent systems that replace the manual work I used to do.",
+      cta: "That's what Agentic Engineering is: everything I've learned about building systems that run without you — packaged into AI agents that work 24/7.",
+      linkedin: "https://www.linkedin.com/in/maciej-marek/",
     },
     tiers: {
       title: "Three Levels of AI Maturity",
@@ -414,7 +422,7 @@ export const aeTranslations = {
     },
     credibility: {
       title: "Zaufali Mi Zespoły z",
-      brands: ["HP", "Akamai", "FastTrack", "JewelryLab", "Monumo", "Cameron Hair"],
+      brands: ["Trebit", "JewelryLab", "Monumo", "Cameron Hair"],
     },
     proof: {
       title: "Silniki Wzrostu Które Zbudowałem. Wyniki Które Mówią.",
@@ -439,6 +447,14 @@ export const aeTranslations = {
           tag: "Content AI",
         },
       ],
+    },
+    founder: {
+      title: "Kto Za Tym Stoi",
+      name: "Maciej Marek",
+      role: "Budowniczy Systemów",
+      bio: "Zaczynałem w korporacyjnych operacjach w HP i Akamai — środowiskach gdzie systemy nie mogą paść. Potem poszedłem w drugą stronę: startupy, e-commerce, creator economy. Współtworzyłem i sprzedałem platformę newsletterową wysyłającą 250K+ maili tygodniowo. Zbudowałem automatyzację wzrostu generującą $10M+ przychodu w e-commerce. Teraz buduję systemy agentów AI, które zastępują ręczną pracę, którą sam kiedyś wykonywałem.",
+      cta: "To jest Agentic Engineering: wszystko czego nauczyłem się o budowaniu systemów, które działają bez Ciebie — spakowane w agentów AI pracujących 24/7.",
+      linkedin: "https://www.linkedin.com/in/maciej-marek/",
     },
     tiers: {
       title: "Trzy Poziomy Dojrzałości AI",

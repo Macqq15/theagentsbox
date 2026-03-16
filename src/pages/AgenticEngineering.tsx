@@ -33,20 +33,18 @@ import {
   Check,
   Play,
   XCircle,
+  Linkedin,
 } from "lucide-react";
 import { aeTranslations, Language } from "@/lib/ae-translations";
 import { cn } from "@/lib/utils";
 
-import hpLogo from "@/assets/HP-Logo.webp";
-import akamaiLogo from "@/assets/Akamai_logo.svg.png";
 import trebitLogo from "@/assets/trebit.webp";
 import monumoLogo from "@/assets/monumo logo.svg";
 import cameronLogo from "@/assets/Cameron_hair_logo_sklep(3).svg";
 import jewelryLabLogo from "@/assets/JewelryLab logo.webp";
+import founderPhoto from "@/assets/my photo-Photoroom.png";
 
 const brandLogos = [
-  { name: "HP", src: hpLogo, h: "h-10" },
-  { name: "Akamai", src: akamaiLogo, h: "h-10" },
   { name: "Trebit", src: trebitLogo, h: "h-7" },
   { name: "JewelryLab", src: jewelryLabLogo, h: "h-7" },
   { name: "Monumo", src: monumoLogo, h: "h-6", invert: true },
@@ -209,44 +207,6 @@ const AgenticEngineering = () => {
         </div>
       </section>
 
-      {/* ═══════════════ BEFORE & AFTER ═══════════════ */}
-      <section className="py-24 px-6 bg-emerald-50/30">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-black text-center mb-4">{t.beforeAfter.title}</h2>
-          <p className="text-center text-slate-500 mb-16 max-w-2xl mx-auto">{t.beforeAfter.subtitle}</p>
-          <div className="space-y-8">
-            {t.beforeAfter.items.map((item, i) => {
-              const areaIcons = [Headset, Newspaper, Megaphone];
-              const AreaIcon = areaIcons[i];
-              const timeSavings = ["6.5h → 5 min", "2h → 5 min", "$500+ → AI 24/7"];
-              return (
-                <div key={i} className="group space-y-4">
-                  <div className="flex items-center justify-between">
-                    <h4 className="font-black text-lg flex items-center gap-2">
-                      <Play size={16} className="text-emerald-500" /> {item.area}
-                    </h4>
-                    <WBadge className="bg-emerald-500 text-white">{timeSavings[i]}</WBadge>
-                  </div>
-                  <div className="grid md:grid-cols-2 gap-4 relative">
-                    <div className="p-6 bg-red-50/50 border border-red-100 rounded-xl flex gap-4">
-                      <XCircle className="text-red-400 shrink-0" />
-                      <p className="text-sm text-slate-600">{item.before}</p>
-                    </div>
-                    <div className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-emerald-500 text-white rounded-full items-center justify-center shadow-lg group-hover:scale-125 transition-transform">
-                      <ArrowRight size={16} />
-                    </div>
-                    <div className="p-6 bg-emerald-50 border border-emerald-100 rounded-xl flex gap-4">
-                      <CheckCircle2 className="text-emerald-500 shrink-0" />
-                      <p className="text-sm text-slate-600">{item.after}</p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* ═══════════════ CONTROL FRAMEWORK ═══════════════ */}
       <section className="py-24 px-6 max-w-7xl mx-auto text-center">
         <Shield className="mx-auto text-emerald-500 mb-6" size={48} />
@@ -288,6 +248,38 @@ const AgenticEngineering = () => {
         </div>
       </section>
 
+      {/* ═══════════════ FOUNDER ═══════════════ */}
+      <section className="py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-[auto_1fr] gap-12 items-center">
+            <div className="flex flex-col items-center gap-4">
+              <img
+                src={founderPhoto}
+                alt={t.founder.name}
+                className="w-40 h-40 rounded-full object-cover border-4 border-emerald-100 shadow-xl"
+              />
+              <div className="text-center">
+                <p className="font-black text-lg">{t.founder.name}</p>
+                <p className="text-sm text-emerald-600 font-semibold">{t.founder.role}</p>
+              </div>
+              <a
+                href={t.founder.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-slate-500 hover:text-emerald-600 transition-colors"
+              >
+                <Linkedin size={16} /> LinkedIn
+              </a>
+            </div>
+            <div className="space-y-6">
+              <h2 className="text-3xl font-black">{t.founder.title}</h2>
+              <p className="text-slate-600 leading-relaxed">{t.founder.bio}</p>
+              <p className="text-emerald-700 font-semibold leading-relaxed">{t.founder.cta}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ═══════════════ 9 AGENTS ═══════════════ */}
       <section id="agents" className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
@@ -308,56 +300,6 @@ const AgenticEngineering = () => {
                     <span className="text-[10px] font-black uppercase text-slate-400">Impact</span>
                     <span className="text-emerald-600 font-black text-sm">{agent.saves}</span>
                   </div>
-                </WCard>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════ YOUR DAY WITH AI ═══════════════ */}
-      <section className="py-24 px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <Clock className="mx-auto text-emerald-500 mb-6" size={48} />
-          <h2 className="text-4xl font-black text-center mb-4">{t.dayWithAi.title}</h2>
-          <p className="text-center text-slate-500 mb-16">{t.dayWithAi.subtitle}</p>
-          {t.dayWithAi.timeline.map((entry, i) => (
-            <div key={i} className="relative flex gap-6 group">
-              {i < t.dayWithAi.timeline.length - 1 && (
-                <div className="absolute left-[39px] top-[52px] w-[2px] h-[calc(100%-24px)] bg-gradient-to-b from-emerald-300 to-emerald-100" />
-              )}
-              <div className="flex-shrink-0 w-20 h-12 rounded-lg bg-emerald-50 border border-emerald-200 flex items-center justify-center text-sm font-mono font-bold text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                {entry.time}
-              </div>
-              <div className="pb-8">
-                <span className={cn(
-                  "text-xs font-bold uppercase tracking-wider",
-                  entry.agent === "You" || entry.agent === "Ty" ? "text-slate-800" : "text-emerald-600"
-                )}>
-                  {entry.agent}
-                </span>
-                <p className="text-sm text-slate-500 mt-1 leading-relaxed">{entry.task}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ═══════════════ FOR WHO ═══════════════ */}
-      <section className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-black text-center mb-16">{t.forWho.title}</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {t.forWho.items.map((item, i) => {
-              const Icon = forWhoIcons[i];
-              return (
-                <WCard key={i} className="p-8 hover:shadow-xl group">
-                  <div className="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <Icon className="w-6 h-6 text-emerald-600" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-1">{item.title}</h3>
-                  <p className="text-sm font-medium text-emerald-600 mb-4">{item.range}</p>
-                  <p className="text-slate-500 leading-relaxed text-sm">{item.desc}</p>
                 </WCard>
               );
             })}
@@ -449,40 +391,40 @@ const AgenticEngineering = () => {
               );
             })}
           </div>
-        </div>
-      </section>
 
-      {/* ═══════════════ COMPARISON ═══════════════ */}
-      <section className="py-24 px-6 max-w-4xl mx-auto">
-        <h2 className="text-4xl font-black text-center mb-4">{t.comparison.title}</h2>
-        <p className="text-center text-slate-500 max-w-2xl mx-auto mb-12">{t.comparison.subtitle}</p>
-        <div className="border border-[hsl(40,12%,89%)] rounded-2xl overflow-hidden shadow-2xl">
-          <table className="w-full text-left border-collapse">
-            <thead className="bg-slate-50 border-b border-[hsl(40,12%,89%)]">
-              <tr>
-                <th className="p-6 font-bold">{t.comparison.colRole}</th>
-                <th className="p-6 font-bold">{t.comparison.colCost}</th>
-                <th className="p-6 font-bold">{t.comparison.colHours}</th>
-                <th className="p-6 font-bold text-emerald-600">{t.comparison.colAi}</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-[hsl(40,12%,89%)]">
-              {t.comparison.items.map((item, i) => (
-                <tr key={i} className="hover:bg-slate-50 transition-colors">
-                  <td className="p-6 font-bold">{item.role}</td>
-                  <td className="p-6 text-red-500 line-through opacity-50 font-mono">{item.cost}</td>
-                  <td className="p-6 text-slate-400">{item.hours}</td>
-                  <td className="p-6 text-emerald-600 font-bold">{item.ai}</td>
-                </tr>
-              ))}
-              <tr className="bg-emerald-50 font-black text-emerald-700 text-lg">
-                <td className="p-6" colSpan={2}>{t.comparison.total}</td>
-                <td className="p-6" colSpan={2}></td>
-              </tr>
-            </tbody>
-          </table>
-          <div className="px-6 py-4 bg-slate-50 text-center">
-            <p className="text-xs text-slate-400">{t.comparison.footnote}</p>
+          {/* Comparison table (merged) */}
+          <div className="mt-20 max-w-3xl mx-auto">
+            <h3 className="text-2xl font-black text-center mb-2 text-white">{t.comparison.title}</h3>
+            <p className="text-center text-emerald-200 text-sm mb-8">{t.comparison.subtitle}</p>
+            <div className="border border-emerald-800 rounded-2xl overflow-hidden">
+              <table className="w-full text-left border-collapse">
+                <thead className="bg-emerald-900 border-b border-emerald-800">
+                  <tr>
+                    <th className="p-4 font-bold text-emerald-200 text-sm">{t.comparison.colRole}</th>
+                    <th className="p-4 font-bold text-emerald-200 text-sm">{t.comparison.colCost}</th>
+                    <th className="p-4 font-bold text-emerald-200 text-sm hidden sm:table-cell">{t.comparison.colHours}</th>
+                    <th className="p-4 font-bold text-emerald-400 text-sm">{t.comparison.colAi}</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-emerald-800">
+                  {t.comparison.items.map((item, i) => (
+                    <tr key={i} className="hover:bg-emerald-900/50 transition-colors">
+                      <td className="p-4 font-bold text-white text-sm">{item.role}</td>
+                      <td className="p-4 text-red-400 line-through opacity-60 font-mono text-sm">{item.cost}</td>
+                      <td className="p-4 text-emerald-300/50 text-sm hidden sm:table-cell">{item.hours}</td>
+                      <td className="p-4 text-emerald-400 font-bold text-sm">{item.ai}</td>
+                    </tr>
+                  ))}
+                  <tr className="bg-emerald-500/20 font-black text-emerald-300">
+                    <td className="p-4" colSpan={2}>{t.comparison.total}</td>
+                    <td className="p-4 hidden sm:table-cell" colSpan={2}></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div className="px-4 py-3 bg-emerald-900/50 text-center">
+                <p className="text-xs text-emerald-300/60">{t.comparison.footnote}</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
